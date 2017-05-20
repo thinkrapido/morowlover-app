@@ -1,4 +1,6 @@
 
+require('electron-reload')(__dirname);
+
 const { app, BrowserWindow } = require('electron');
 
 const url = `file://${__dirname}/index.html`;
