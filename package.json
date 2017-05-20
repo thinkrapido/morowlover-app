@@ -1,6 +1,8 @@
 {
-  "name": "electron-angular2-seed",
+  "name": "morowlover",
   "version": "0.0.0",
+  "author": "Romeo Disca (romeo.disca@gmail.com)",
+  "description": "Morow Radio Desktop App",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
