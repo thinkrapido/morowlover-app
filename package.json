@@ -8,7 +8,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "watch.sh",
+    "watch": "./watch.sh",
     "watch-w": "watch.bat",
     "build-electron": "ng build --base-href . && copy src\\electron\\* dist",
     "electron": "npm run build-electron && electron .",
