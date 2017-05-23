@@ -1,3 +1,3 @@
 IF NOT EXIST dist ( md dist )
-start /b ng build -w
-sleep 15 && copy src\electron\* dist && electron .
+copy src\electron\* dist && start /b electron .
+findstr /c:"\"ejected\": true" .angular-cli.json && webpack -w || start /b ng build -w
