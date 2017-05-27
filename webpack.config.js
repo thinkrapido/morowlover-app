@@ -100,7 +100,7 @@ module.exports = {
         "loader": "raw-loader"
       },
       {
-        "test": /\.(eot|svg)$/,
+        "test": /\.(ttf|eot|svg)$/,
         "loader": "file-loader?name=[name].[hash:20].[ext]"
       },
       {
