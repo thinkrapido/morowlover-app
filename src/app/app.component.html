@@ -1,3 +1,11 @@
+<div>
+  
 <h1>
   {{title}}
 </h1>
+
+
+  <music-player [photo]="photo" [paused]="!musicService.isPlaying" (pauseplay)="musicService.togglePlay()"></music-player>
+  <current-playing></current-playing>
+  <history></history>
+</div>

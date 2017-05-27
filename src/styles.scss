@@ -1,3 +1,38 @@
 
+@import 'scss/presets';
+
+@import url('https://fonts.googleapis.com/css?family=Barrio');
+
 $fa-font-path: '../node_modules/font-awesome/fonts';
 @import '../node_modules/font-awesome/scss/font-awesome';
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #333;
+  color: white;
+  font-family: 'Barrio', cursive;
+}
+
+h1 {
+  color: $title-color;
+}
+
+.artist {
+  color: #33cc33;
+}
+
+.title {
+  color: #cccc33;
+}
+
+.time {
+  color: $button-color;
+}

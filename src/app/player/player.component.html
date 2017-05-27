@@ -1,0 +1,6 @@
+<div class="player" [ngStyle]="{'background-image': 'url(' + photo + ')'}">
+  <div class="player__main">
+    <button *ngIf="!paused" (click)="pauseplay.emit()"><i class="fa fa-pause"></i></button>
+    <button *ngIf="paused" (click)="pauseplay.emit()"><i class="fa fa-play"></i></button>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+<div class="history">
+  <ul>
+    <li *ngFor="let item of history"><span class="time">{{item.playedAt | playedAt}}</span> - <span class="artist">{{item.artist}}</span> - <span class="title">{{item.title}}</span></li>
+  </ul>
+</div>
