@@ -1,14 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { MusicPlayerComponent } from './player/player.component';
 import { CurrentPlayingComponent } from './artist/artist.component';
 import { HistoryComponent } from './artist/history.component';
 
-import { PlayedAtPipe } from './pipes/playedAt.pipe';
+import { TimeTransformer } from './pipes/playedAt.pipe';
 
 import { ApiService } from './services/api.service';
 import { StreamService } from './services/stream.service';
@@ -20,12 +20,12 @@ import { MusicService } from './services/music.service';
     MusicPlayerComponent,
     CurrentPlayingComponent,
     HistoryComponent,
-    PlayedAtPipe,
+    TimeTransformer,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpClientModule
   ],
   exports: [
     MusicPlayerComponent,

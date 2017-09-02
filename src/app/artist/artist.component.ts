@@ -10,6 +10,8 @@ import { StreamService } from '../services/stream.service';
 export class CurrentPlayingComponent implements OnInit {
   public title: string;
   public artist: string;
+  public started: string;
+  public rest: string;
 
   constructor(private stream: StreamService) {}
 
@@ -17,6 +19,10 @@ export class CurrentPlayingComponent implements OnInit {
     this.stream.getCurrent().subscribe(data => {
       this.title = data.title;
       this.artist = data.artist;
+    })
+    this.stream.getPlayTime().subscribe((data: any) => {
+      this.started = data.started,
+      this.rest    = data.end
     })
   }
 

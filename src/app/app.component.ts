@@ -14,9 +14,10 @@ export class AppComponent implements OnInit {
   public photo: string;
 
   constructor(public musicService: MusicService, public streamService: StreamService) {
-    streamService.getCurrent().subscribe(data => {
-      this.photo = data.cover;
-    })
+    streamService.getCurrent()
+      .subscribe(data => {
+        this.photo = data.cover || 'https://morow.com/assets/img/logo@2x.png';
+      });
   }
 
   ngOnInit() {
